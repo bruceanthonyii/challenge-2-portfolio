@@ -1,0 +1,35 @@
+/* scrub default html border */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: azure;
+    color: rgb(18, 18, 124);
+}
+
+section {
+    padding: 30px;
+}
+
+.hero {
+    background-image: url("../images/ace.jpg") ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-position: 80%;
+    text-align: right;
+    padding: 300px 100px 50px 200px
+}
+
+.hero div {
+    font-size: 25px;
+    background-color: azure;
+    border: 5px solid azure;
+    
+}
