@@ -74,7 +74,7 @@ header nav ul li a {
     align-items: flex-end;
     background-position: 80%;
     text-align: right;
-    padding: 300px 100px 50px 200px
+    padding: 300px 50px 50px 200px
 }
 
 .hero div {
@@ -84,3 +84,81 @@ header nav ul li a {
     
 }
 
+.horizontal {
+    padding: 50px 100px;
+    display: flex;
+    
+    
+
+}
+
+.horizontal h2 {
+    font-size: 35px;
+    text-align: right;
+    padding: 5px 25px 50px;
+    width: 200px;
+}
+
+.content {
+    border-left: 3px solid ;
+    padding: 3px 25px;
+}
+
+.content ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.content ul li {
+    padding: 5px 5px;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 5px solid rgb(18, 18, 124) ;
+    margin: 0px 20px;
+    position: relative;
+    top: 30px;
+}
+
+.content ul li a {
+    color: rgb(18, 18, 124);
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 1000px;
+    height: 500px;
+    grid-gap: 20px;
+}
+
+.project-img {
+    background-size: cover;
+    border: 6px solid rgb(18, 18, 124);
+}
+
+.project-1 {
+    background-image: url("../images/chess.jpg");
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.project-2 {
+    background-image: url("../images/computer.jpg");
+}
+
+.project-3 {
+    background-image: url("../images/gokart.jpg");
+}
+
+.project-4 {
+    background-image: url("../images/dice.jpg");
+}
+
+.project-5 {
+    background-image: url("../images/maze.jpg");
+}
