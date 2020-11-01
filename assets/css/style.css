@@ -8,10 +8,60 @@
 body {
     background-color: azure;
     color: rgb(18, 18, 124);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
     padding: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 20px 10px 0px;
+    background-color:  rgb(18, 18, 124);
+    text-decoration: none;
+}
+
+header h2 {
+    position: relative;
+    top: 15px;
+
+}
+
+header h2 a {
+    text-decoration: none;
+    color: rgb(18, 18, 124);
+    background-color: azure;
+    border-left: 75px solid azure;    
+    font-size:40px;
+    padding: 5px;
+}
+
+header nav {
+    margin: 10px 0px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 10px 30px;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 5px solid azure ;
+    margin: 0px 10px;
+}
+
+header nav ul li a {
+    color: azure;
+    text-decoration: none;
 }
 
 .hero {
@@ -33,3 +83,4 @@ section {
     border: 5px solid azure;
     
 }
+
