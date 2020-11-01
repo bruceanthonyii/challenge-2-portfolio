@@ -64,6 +64,13 @@ header nav ul li a {
     text-decoration: none;
 }
 
+footer {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
 .hero {
     background-image: url("../images/ace.jpg") ;
     background-size: cover;
