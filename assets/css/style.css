@@ -144,43 +144,71 @@ footer {
     grid-gap: 20px;
 }
 
-.project-img {
-    background-size: cover;
+.project {
     border: 6px solid azure;
     padding-top: 75px;
 }
 
-.project-img h3 {
+
+
+
+.project div h3 {
     background-color: azure;
     font-size: 35px;
     width: max-content;
     border-right: 5px solid azure;
-}
-
-.project-img h3 a {
     text-decoration: none;
     color:rgb(18, 18, 124);
 }
+
+
 
 .project-1 {
     background-image: url("../images/chess.jpg");
     grid-column: 1/3;
     grid-row: 1/3;
     padding-top: 225px;
+    background-size: cover;
+    text-decoration: none;
 }
 
 .project-2 {
     background-image: url("../images/computer.jpg");
+    background-size: cover;
+    text-decoration: none;
 }
 
 .project-3 {
     background-image: url("../images/gokart.jpg");
+    background-size: cover;
+    text-decoration: none;
 }
 
 .project-4 {
     background-image: url("../images/dice.jpg");
+    background-size: cover;
+    text-decoration: none;
 }
 
 .project-5 {
     background-image: url("../images/maze.jpg");
+    background-size: cover;
+    text-decoration: none;
+}
+
+.project::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(252, 225, 56, 0.3), rgb(2, 78, 118));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.project:hover .project::after {
+    opacity: 1;
+    transition: 0.5s;
 }
