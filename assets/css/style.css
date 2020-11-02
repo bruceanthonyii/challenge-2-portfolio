@@ -111,9 +111,11 @@ footer {
 .content ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     list-style: none;
+    position: relative;
+    bottom: 30px;
 }
 
 .content ul li {
@@ -142,6 +144,7 @@ footer {
     width: 1000px;
     height: 500px;
     grid-gap: 20px;
+    text-decoration: none;
 }
 
 
@@ -150,6 +153,7 @@ footer {
     border: 6px solid azure;
     padding-top: 75px;
     position: relative;
+    text-decoration: none;
 }
 
 .project div h3 {
@@ -171,11 +175,13 @@ footer {
     left: 0;
     opacity: 1;
     transition: .5s;
+    text-decoration: none;
 }
 
 .project:hover .project-img::after {
     opacity: 0;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 .project-1 {
@@ -213,3 +219,104 @@ footer {
     text-decoration: none;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0%;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h2 a{
+        width: 100%;
+        text-align: center;
+        border-left: none;
+    }
+
+    header nav ul {
+        margin-top: 20xp;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    section h2 {
+        width: 80%;
+    }
+
+    .grid {
+        display: block;
+        width: fit-content;
+        height: max-content;
+    }
+
+    .project {
+        margin: 10px;
+    }
+
+
+    .contact ul {
+        flex: 1 100%;
+        
+    }
+    
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .horizontal {
+        padding: 30px 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .horizontal h2 {
+        text-align: center;
+        padding: 5px 25px 25px;
+        width: 500px;
+    }
+
+    .content {
+        border-top: 3px solid ;
+        border-left: none;
+        padding: 25px;
+    }
+
+    .project-img::after {
+        background: none;
+    }
+
+
+}
+/* MEDIA QUERY FOR MOBLILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    .hero-form button {
+        width: 100%;
+    }
+
+    .section-title {
+        width: 95%;
+    }
+
+    .intro p {
+        width: 100%;
+    }
+
+    .trainer {
+        flex: 0 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info > * {
+        flex: 0 100%;
+
+    }
+}
