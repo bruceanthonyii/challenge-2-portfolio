@@ -251,8 +251,7 @@ footer {
 
     .grid {
         display: block;
-        width: fit-content;
-        height: max-content;
+        block-size: auto;
     }
 
     .project {
@@ -288,6 +287,12 @@ footer {
         padding: 25px;
     }
 
+    .grid {
+        
+        width: fit-content;
+        height: max-content;
+    }
+
     .project-img::after {
         background: none;
     }
@@ -296,6 +301,14 @@ footer {
 }
 /* MEDIA QUERY FOR MOBLILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+
+    .hero {
+        align-items: center;
+    }
+
+    .content {
+        width: 345px ;
+    }
 
     .hero-form button {
         width: 100%;

@@ -2,7 +2,8 @@
 
 This is my portfolio page that I loosly modeled from the mocck up in canvas. 
 
-There are make note that there are no project links because I am still a rookie and have no personal projects to showcase. The links do work bu they will just send you back to the top of the screen.
+There are make note that there are no project links because I am still a rookie and have no personal projects to showcase. The links do work bu they will just send you back to the top of the screen. Contact links fucntion alike.
+
 
 Here is the link to the site
 
